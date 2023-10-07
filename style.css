@@ -13,6 +13,7 @@
     margin: 0;
     background-image: url('img/BookCaseBackground.jpg');
   }
+  /* gebruik gemaakt van een image achtergrond */
   
   a {
     text-decoration: none;
@@ -106,8 +107,7 @@
 
   .articleSubsections section{
     display: flex;
-    border-right: 2px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     margin: 1em;
     width: 95%;
     height: 15em;
@@ -147,6 +147,8 @@
   }
 
   /* Genre pagina */
+  /* gebruik gemaakt van grid om te zien hoe het werkt en om te kijken
+  of flexbox makkelijker is */
 
   .genres {
     display: grid;
@@ -155,6 +157,8 @@
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     }
+    /* dit gedeelte repeat de kolommen en rijen met de juiste grootes
+    en hoeveelheden */
     
   .div1 { 
     grid-area: 1 / 1 / 2 / 2;
@@ -191,11 +195,11 @@
     background-color: #438d86; 
   }
 
-  .div2, .div4, .div6, .div8, .div10, .div12{
+  .genres :nth-child(even){
     background: rgba(0, 0, 0, 0.5);
   }
 
-  .div1:hover, .div3:hover, .div5:hover, .div7:hover, .div9:hover, .div11:hover{
+  .genres :hover:nth-child(odd):not(:last-child){
     filter: brightness(85%);
   }
 
