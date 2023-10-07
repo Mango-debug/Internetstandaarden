@@ -141,7 +141,7 @@ Carbon calculator: 0.17g CO2. gedient als sustainable*/
 
   /* Footer */
   
-  .footer{
+  footer{
     margin-top: auto;
     color: #ffffff;
     background: rgba(204, 204, 204, 0.5);
@@ -157,6 +157,7 @@ Carbon calculator: 0.17g CO2. gedient als sustainable*/
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 12px;
     grid-row-gap: 12px;
+    margin-top: 1em;
     }
     /* dit gedeelte repeat de kolommen en rijen met de juiste grootes
     en hoeveelheden */
@@ -324,6 +325,7 @@ Carbon calculator: 0.17g CO2. gedient als sustainable*/
     justify-content: center;
     align-items: normal;
     align-content: normal;
+    margin-bottom: 2em;
   }
 
   .quoteSection{
